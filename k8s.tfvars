@@ -1,0 +1,2 @@
+# terraform.tfvars
+hcloud_token = "3Bje44T0DiFsmuDW8LnFfbXwc1oPrjw3xyiZha6slizQaX61yFMdpJ9qry9ZPIWb"

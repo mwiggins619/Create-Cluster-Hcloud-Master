@@ -1,0 +1,11 @@
+[Unit]
+Description=LVS and VRRP High Availability monitor
+After=network.target
+ConditionFileNotEmpty=/etc/keepalived/keepalived.conf
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/keepalived --dont-fork
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=process
+[Install]
+WantedBy=multi-user.target
